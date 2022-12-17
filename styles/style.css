@@ -150,7 +150,7 @@
 .section-subtitle {
   margin: 0;
   padding: 0;
-  width: 60%;
+  max-width: 60%;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -216,10 +216,6 @@
 }
 
 .table__text_theme_dark {
-  margin-bottom: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 400;
   color: #fff;
 }
 
@@ -335,6 +331,15 @@
 }
 
 .footer__column-links {
+  margin:0;
+  padding: 0;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer__column-link {
   margin: 0;
   padding: 0;
   color: #fff;
