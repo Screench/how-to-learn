@@ -445,12 +445,14 @@ object-position: top;
 
 }
 .khan__buy-link {
+  margin: 0;
   text-decoration: none;
   line-height: 42px;
   font-size: 30px;
   font-weight: 400;
   color: #2f80ed;
   transition: opacity ease .4s;
+  align-self: flex-start;
 
 
 }
