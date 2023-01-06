@@ -15,6 +15,7 @@
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -58,6 +59,11 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity ease .4s;
+}
+
+.header__link:hover {
+  opacity: 0.4;
 }
 
 .header__main-illustration {
@@ -77,6 +83,21 @@
   right: 0;
   background-color: #2f80ed;
   z-index: 0;
+  animation: rotation linear 20s infinite;
+  
+}
+
+@keyframes rotation {
+  from {
+  transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation linear 20s infinite;
 }
 
 .description {
@@ -122,6 +143,87 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+}
+
+
+
+.techniques {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  min-width: 80%;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  width: 240px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.cards__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px 40px;
+  border-radius: 50%;
+
+}
+
+.cards__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__description {
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.video__iframes {
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+
+.video__iframe {
+  
+  width: 515px;
+  height: 316px;
+  border: 0;
+}
+
+.video__iframe:nth-child(1) {
+  margin-right: 20px;
+}
+
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
 }
 
 .digits {
@@ -266,7 +368,98 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
+  transition: opacity ease .4s;
 }
+
+.feynman__link:hover {
+  opacity: 0.4;
+}
+
+
+
+.khan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
+
+.khan__container {
+  width: 80%;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.khan__title {
+  margin: 0;
+margin-bottom: 50px;
+line-height: 1.15;
+font-size: 60px;
+font-weight: 600;
+
+}
+
+.khan__quote {
+  margin: 0;
+width: 790px;
+margin-bottom: 36px;
+line-height: 34px;
+font-size: 24px;
+font-weight: 400;
+}
+
+.khan__quote-author {
+  margin: 0;
+margin-bottom: 10px;
+line-height: 1.15;
+font-size: 24px;
+font-weight: 600;
+
+}
+
+.khan__quote-author-subline {
+  margin: 0;
+  margin-bottom: 68px;
+  line-height: 1.15;
+font-size: 24px;
+font-weight: 400;
+
+}
+
+.khan__book-container {
+display: flex;
+
+}
+
+.khan__book-pic {
+width: 620px;
+height: 608px;
+margin-right: 48px;
+object-fit: cover;
+object-position: top;
+
+}
+.khan__buy-link {
+  text-decoration: none;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #2f80ed;
+  transition: opacity ease .4s;
+
+
+}
+.khan__buy-link:hover {
+  opacity: 0.4;
+}
+
+
+
 
 .kaufman {
   margin: 0;
@@ -290,6 +483,32 @@
   right: -210px;
   width: 877px;
   height: 877px;
+}
+
+.resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources__logo-zone {
+  margin: 80px auto 0 auto;
+  padding: 0;
+  display: flex;
+  width: 1100px;
+  list-style: none;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  transition: opacity .4s ease;
+}
+
+.resources__logo:hover {
+  opacity: 0.4;
 }
 
 .footer {
@@ -343,28 +562,19 @@
 }
 
 .footer__column-link {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
   text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
-  list-style: none;
+  color: #fff;
+  transition: opacity .4s ease;
 }
 
-.footer__column-link {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  text-decoration: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 400;
-  list-style: none;
+.footer__column-link:hover {
+  opacity: 0.4;
 }
+
+
 
 .footer__author {
   margin: 0;
@@ -384,5 +594,7 @@
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
   margin-right: 10px;
 }
