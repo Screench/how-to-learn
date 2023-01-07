@@ -18,3 +18,11 @@
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/resources/resources.css);
 @import url(../blocks/footer/footer.css);
+
+.cards__description {
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: 400;
+}
