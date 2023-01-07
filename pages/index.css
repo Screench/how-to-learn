@@ -1,8 +1,8 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/root/root.css);
 @import url(../blocks/header/header.css);
-@import url(../blocks/rotation/rotation.css);
 @import url(../blocks/logo/logo.css);
+@import url(../blocks/rotation/rotation.css);
 @import url(../blocks/description/description.css);
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/section-title/section-title.css);
@@ -18,11 +18,3 @@
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/resources/resources.css);
 @import url(../blocks/footer/footer.css);
-
-.cards__description {
-  margin: 0;
-  padding: 0;
-  line-height: 23px;
-  font-size: 18px;
-  font-weight: 400;
-}
