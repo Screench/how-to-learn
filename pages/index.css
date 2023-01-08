@@ -37,8 +37,8 @@
 @import url(../blocks/cards/__description/cards__description.css);
 
 @import url(../blocks/video/video.css);
-@import url(../blocks/video/video__iframes/video__iframes.css);
-@import url(../blocks/video/video__iframe/video__iframe.css);
+@import url(../blocks/video/__iframes/video__iframes.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
 
 @import url(../blocks/oakley/oakley.css);
 
@@ -55,7 +55,7 @@
 @import url(../blocks/table/__heading/table__heading.css);
 @import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
 @import url(../blocks/table/__text/table__text.css);
-@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
+@import url(../blocks/table/__text/_theme/table_text_theme_dark.css);
 
 @import url(../blocks/khan/khan.css);
 @import url(../blocks/khan/__container/khan__container.css);
